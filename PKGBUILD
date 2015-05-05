@@ -1,3 +1,4 @@
+# Maintainer: Mark Wells: mwellsa -at- gmail com
 # Contributor: simone riva: siomone.rva -a- gmail com
 # Intel Parallel Studio XE 2011 for Linux - ( Intel compiler icc suite )
 ##########################################################################
