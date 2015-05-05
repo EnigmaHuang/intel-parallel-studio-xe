@@ -50,14 +50,14 @@ _remove_docs=true
 
 ########################################
 ########################################
-# set to true if you want to remove the static objects form the libs .
+# set to true if you want to remove the static objects from the libs.
 _remove_static_objects_mkl=true
 _remove_static_objects_ipp=true
 ########################################
 
 _year='2015'
 _v_a='3'
-_v_b='164' 
+_v_b='187' 
 
 _update='update3'
 
@@ -65,15 +65,15 @@ pkgrel=3
 
 _sp=''
 
-_advisor_ver='1.10.380555'
-_icc_ver='15.0.2'
-_inspector_ver='1.2.379161'
-_ipp_ver='8.2.1'
-_mkl_ver='11.2.2'
-_openmp_ver='15.0.1'
-_sourcechecker_ver='15.0.2'
-_tbb_ver='4.3.0'
-_vtune_ver='2.0.393444'
+_advisor_ver='15.1.380555'  # intel-advisor-xe-${year}-*-${_advisor_ver}.${arch}.rpm
+_icc_ver='15.0.3'   # intel-ccompxe-${_v_b}-${_icc_ver}.noarch.rpm
+_inspector_ver='15.1-379161' # intel-inspector-xe-${year}-*-${_inspector_ver}.${arch}.rpm
+_ipp_ver='8.2.2'    # intel-ipp-ac-${_v_b}-${_ipp_ver}.${arch}.rpm
+_mkl_ver='11.2.3'   # intel-mkl-cluster-${_v_b}-${_mkl_ver}.${arch}.rpm
+_openmp_ver='15.0.3'    # intel-openmp-${_v_b}-${_openmp_ver}.${arch}.rpm
+_sourcechecker_ver='15.0.3' # intel-sourcechecker-common-${_v_b}-${_sourcechecker_ver}.noarch.rpm
+_tbb_ver='4.3.5'    # intel-tbb-${_v_b_}-${_tbb_ver}.noarch.rpm
+_vtune_ver='15.3.403110' # intel-vtune-amplifier-xe-${year}-*-${_vtune_ver}.${arch}.rpm
 
 
 
