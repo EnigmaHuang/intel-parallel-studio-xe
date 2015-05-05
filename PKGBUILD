@@ -56,30 +56,30 @@ _remove_static_objects_ipp=true
 ########################################
 
 _year='2015'
-_v_a='2'
+_v_a='3'
 _v_b='164' 
 
-_update='update2'
+_update='update3'
 
-pkgrel=2
+pkgrel=3
 
 _sp=''
 
+_advisor_ver='1.10.380555'
 _icc_ver='15.0.2'
+_inspector_ver='1.2.379161'
 _ipp_ver='8.2.1'
 _mkl_ver='11.2.2'
 _openmp_ver='15.0.1'
 _sourcechecker_ver='15.0.2'
-_vtune_ver='2.0.393444'
-_advisor_ver='1.10.380555'
-_inspector_ver='1.2.379161'
-
 _tbb_ver='4.3.0'
+_vtune_ver='2.0.393444'
+
 
 
 pkgver=${_year}.${_icc_ver}.${_v_a}.${_v_b}
 
-_dir_nr='5207'
+_dir_nr='7538'
 
 options=(strip libtool staticlibs)
 
