@@ -120,27 +120,24 @@ source=(
 	)
 
 
-
-
-
 sha256sums=(
-	'8cbde4d4fb3bbfcc5096d5d924953121ca84e9a9bee7b00dfd07c029c1a89943' # parallel_studio_xe_2015_update2.tgz
-	'338041f924d8f3ac31d349bca57f8ab66f094a5bb53d4f821f48fa710a112111' # intel_compilers.sh
-	'7da22140b9d8277d06d88f6bd37cb77ed17bc87d4f7ec5958587416639955991' # intel_vtune-amplifier-xe.sh
-	'292a9eea2c9a836ee9dc0d4ff28fc741d5548a3182e4f75aec7b93e1dd7b4f21' # intel_advisor-xe.sh
-	'6dc3992ac649f979328d13cb98ead95121752a34fbad07d41ee65b084cdf03cf' # intel_inspector-xe.sh
-	'3f96dec03111e69d16bb363acf4d0570e8a9526c09e5e542a7558f1b26d043ef' # intel-composer.install
-	'31ac4d0f30a93fe6393f48cb13761d7d1ce9719708c76a377193d96416bed884' # intel-compiler-base.conf
-	'c165386ba33b25453d4f5486b7fefcdba7d31e156ad280cbdfa13ed924b01bef' # intel-fortran.conf
-	'99cc9683cc75934cc21bb5a09f6ad83365ee48712719bfd914de9444695eed13' # intel-openmp.conf
-	'a856326362e9b80c19dc237cbf66bf3d96a69bd7ad1baff99ec9849f8208348c' # intel-mkl.conf
-	'da6f41c2e002c9a793c75a18c8d1c85ef7ef5bf83a7a0a158ff144481491aac8' # intel-ipp.conf
-	'aee2ae7f87f12f4af38d52423b40d547fd5bbe77e18694b9847e9f2a96d33c6e' # intel-tbb.conf
-	'5e68c529c65cac54218026c869e54b2ddb268179725fc1e6b56d920470dad999' # intel-mkl.sh
-	'11398c0ae2e2011902b1d6356d916d41bb8b54d39d090c6c83630f4b0e84e93a' # intel-mkl.install
-        'e515cb28bf40cdb0db818db6a2688a0028575153a1b9d5acfb0bc5f13fe45722' # intel-mkl-th.conf
-	'8c6a1f7b1b12d498e68b3085d8b2fcd050505209b7c0f2b870ba5f65ee135a90' # intel-tbb.install
-	'228ac25e147adb9b872e1a562e522d2fd48809ccae89b765112009896a6d55a5' # EULA.txt
+    'ab7169989c87bbb0fe66221cb7eb3a26b17c8b9ceff38f1926e5607834306896'  # parallel_studio_xe_2015_update2.tgz
+	'338041f924d8f3ac31d349bca57f8ab66f094a5bb53d4f821f48fa710a112111'  # intel_compilers.sh
+	'7da22140b9d8277d06d88f6bd37cb77ed17bc87d4f7ec5958587416639955991'  # intel_vtune-amplifier-xe.sh
+	'292a9eea2c9a836ee9dc0d4ff28fc741d5548a3182e4f75aec7b93e1dd7b4f21'  # intel_advisor-xe.sh
+	'6dc3992ac649f979328d13cb98ead95121752a34fbad07d41ee65b084cdf03cf'  # intel_inspector-xe.sh
+	'3f96dec03111e69d16bb363acf4d0570e8a9526c09e5e542a7558f1b26d043ef'  # intel-composer.install
+	'31ac4d0f30a93fe6393f48cb13761d7d1ce9719708c76a377193d96416bed884'  # intel-compiler-base.conf
+	'c165386ba33b25453d4f5486b7fefcdba7d31e156ad280cbdfa13ed924b01bef'  # intel-fortran.conf
+	'99cc9683cc75934cc21bb5a09f6ad83365ee48712719bfd914de9444695eed13'  # intel-openmp.conf
+	'a856326362e9b80c19dc237cbf66bf3d96a69bd7ad1baff99ec9849f8208348c'  # intel-mkl.conf
+	'da6f41c2e002c9a793c75a18c8d1c85ef7ef5bf83a7a0a158ff144481491aac8'  # intel-ipp.conf
+	'aee2ae7f87f12f4af38d52423b40d547fd5bbe77e18694b9847e9f2a96d33c6e'  # intel-tbb.conf
+	'5e68c529c65cac54218026c869e54b2ddb268179725fc1e6b56d920470dad999'  # intel-mkl.sh
+	'11398c0ae2e2011902b1d6356d916d41bb8b54d39d090c6c83630f4b0e84e93a'  # intel-mkl.install
+        'e515cb28bf40cdb0db818db6a2688a0028575153a1b9d5acfb0bc5f13fe45722'  # intel-mkl-th.conf
+	'8c6a1f7b1b12d498e68b3085d8b2fcd050505209b7c0f2b870ba5f65ee135a90'  # intel-tbb.install
+	'228ac25e147adb9b872e1a562e522d2fd48809ccae89b765112009896a6d55a5'  # EULA.txt
 	)
 
 
