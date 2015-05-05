@@ -67,15 +67,18 @@ _sp=''
 
 _advisor_ver='15.1.380555' # intel-advisor-xe-${year}-*-${_advisor_ver}.${arch}.rpm
 _icc_ver='15.0.3' # intel-ccompxe-${_v_b}-${_icc_ver}.noarch.rpm
-_inspector_ver='15.1-379161' # intel-inspector-xe-${year}-*-${_inspector_ver}.${arch}.rpm
-_inspector_man_ver='15.1-379161' # for some reason the man path is different version
+_inspector_ver='15.1.379161' # intel-inspector-xe-${year}-*-${_inspector_ver}.${arch}.rpm
 _ipp_ver='8.2.2' # intel-ipp-ac-${_v_b}-${_ipp_ver}.${arch}.rpm
 _mkl_ver='11.2.3' # intel-mkl-cluster-${_v_b}-${_mkl_ver}.${arch}.rpm
 _openmp_ver='15.0.3' # intel-openmp-${_v_b}-${_openmp_ver}.${arch}.rpm
 _sourcechecker_ver='15.0.3' # intel-sourcechecker-common-${_v_b}-${_sourcechecker_ver}.noarch.rpm
 _tbb_ver='4.3.5' # intel-tbb-${_v_b_}-${_tbb_ver}.noarch.rpm
 _vtune_ver='15.3.403110' # intel-vtune-amplifier-xe-${year}-*-${_vtune_ver}.${arch}.rpm
-_vtune_man_ver='3.0.403110' # for some reason the man path is different version
+
+# for some reason these man paths are different versions
+_advisor_man_ver='1.10.380555' 
+_inspector_man_ver='1.2.379161'
+_vtune_man_ver='3.0.403110'
 
 
 
@@ -834,7 +837,8 @@ package_intel-advisor-xe() {
 	extract_rpms 'intel-advisor-xe-*.rpm'  $xe_build_dir
 	
 	echo -e " # intel-advisor-xe: Coping man pages"
-	mv ${xe_build_dir}/opt/intel/advisor_xe_${_year}.${_advisor_ver}/man/man1/*.1 ${_man_dir}
+	#mv ${xe_build_dir}/opt/intel/advisor_xe_${_year}.${_advisor_ver}/man/man1/*.1 ${_man_dir}
+	mv ${xe_build_dir}/opt/intel/advisor_xe_${_year}.${_advisor_man_ver}/man/man1/*.1 ${_man_dir}
 
 	cd ${_man_dir}
 	for f in *.1 ; do
