@@ -74,6 +74,7 @@ _openmp_ver='15.0.3'    # intel-openmp-${_v_b}-${_openmp_ver}.${arch}.rpm
 _sourcechecker_ver='15.0.3' # intel-sourcechecker-common-${_v_b}-${_sourcechecker_ver}.noarch.rpm
 _tbb_ver='4.3.5'    # intel-tbb-${_v_b_}-${_tbb_ver}.noarch.rpm
 _vtune_ver='15.3.403110' # intel-vtune-amplifier-xe-${year}-*-${_vtune_ver}.${arch}.rpm
+_vtune_man_ver='3.0.403110' # for some reason the man path is different version
 
 
 
@@ -789,7 +790,8 @@ package_intel-vtune-amplifier-xe() {
 	extract_rpms 'intel-vtune-amplifier-xe-*.rpm'  $xe_build_dir
 	
 	echo -e " # intel-vtune-amplifier-xe: Coping man pages"
-	mv ${xe_build_dir}/opt/intel/vtune_amplifier_xe_${_year}.${_vtune_ver}/man/man1/*.1 ${_man_dir}
+	mv ${xe_build_dir}/opt/intel/vtune_amplifier_xe_${_year}.${_vtune_man_ver}/man/man1/*.1 ${_man_dir}
+	#mv ${xe_build_dir}/opt/intel/vtune_amplifier_xe_${_year}.${_vtune_ver}/man/man1/*.1 ${_man_dir}
 
 	cd ${_man_dir}
 	for f in *.1 ; do
