@@ -1,6 +1,6 @@
 # Maintainer: Mark Wells: mwellsa -at- gmail com
 # Contributor: simone riva: siomone.rva -a- gmail com
-# Intel Parallel Studio XE 2011 for Linux - ( Intel compiler icc suite )
+# Intel Parallel Studio XE 2015 for Linux - ( Intel compiler icc suite )
 ##########################################################################
 # this PKGBUILD splits the main Parallel Studio XE packege in 8 sub-packages:
 #
@@ -15,7 +15,7 @@
 ###########################################################################
 
 # Parallel Studio XE
-#     Copyright (C) 2011   Simone Riva
+#     Copyright (C) 2015    Mark Wells
 # 
 #     This program is free software: you can redistribute it and/or modify
 #     it under the terms of the GNU General Public License as published by
@@ -30,8 +30,6 @@
 #     You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# http://registrationcenter-download.intel.com/akdlm/irc_nas/4992/parallel_studio_xe_2015_update1.tgz
-
 pkgbase="intel-parallel-studio-xe"
 #pkgname="intel-parallel-studio-xe"
 #pkgname=( 'intel-compiler-base'  'intel-advisor-xe' )
@@ -42,18 +40,14 @@ PKGEXT='.pkg.tar.gz'
 
 ########################################
 #OPTIONS begin
-# if you are using an AMD 64 cpu set this variable to true, leave it to false if you use an ia32, amd32 or intel64
-#_amd_64=false 
-
 # set to true if you want to remove documentations and examples form the packages.
 #_remove_docs=TRUE
 _remove_docs=true
 
-########################################
-########################################
 # set to true if you want to remove the static objects from the libs.
 #_remove_static_objects_mkl=true
 _remove_static_objects_mkl=false
+
 #_remove_static_objects_ipp=true
 _remove_static_objects_ipp=false
 ########################################
@@ -90,14 +84,6 @@ pkgver=${_year}.${_icc_ver}.${_v_a}.${_v_b}
 _dir_nr='7538'
 
 options=(strip libtool staticlibs)
-
-
-#if $_amd_64 ; then
-#  _not_arch_64='intel64'
-#else
-#  _not_arch_64='ia64' 
-#fi
-
 
 url="http://software.intel.com/en-us/articles/non-commercial-software-download/"
 arch=('i686' 'x86_64')
