@@ -135,7 +135,7 @@ sha256sums=(
 	)
 
 
-#_archive=l_ccompxe${_comp}_p_${pkgver}
+_archive=${_parallel_studio_xe_dir}
 if [ "$CARCH" = "i686" ]; then
     _i_arch='ia32'
     _i_arch2='i486'
@@ -257,11 +257,16 @@ build() {
 	    echo -e "\e[1mFound license files in ${base_dir}."
         echo -e "These will be installed into /opt/intel/licenses ...\e[0m"
     else
-	    echo -e "\e[1mNo license files found in ${base_dir}."
-        echo -e "Remember to place license files in one of these locations:"
-        echo -e "    /opt/intel/licenses"
-        echo -e "    ~/intel/licenses"
-        echo -e "Or the compiler will not work!\e[0m"
+	read -p "NO licence file found. Do you have a serial number? [Y/n] " RESP
+        RESP=${RESP,,}
+        if [[ $RESP =~ ^(Y|y|yes| ) ]]; then
+            read -p "Please enter your serial number: " SERIAL
+            sed -i '/^ACTIVATION_TYPE=/s/=.*/=serial_number/' ${srcdir}/${_archive}/silent.cfg
+            echo "ACTIVATION_SERIAL_NUMBER=$SERIAL" >> ${srcdir}/${_archive}/silent.cfg
+        else
+            msg "Before re-building, visit the website above to ask for a non-commercial license, and place the .lic file in "${srcdir}"/"
+            exit 0
+        fi
     fi
 	echo -e "-----------------------------------------------------------------------------------"
     echo -e ""
